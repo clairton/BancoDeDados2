@@ -22,5 +22,4 @@ GROUP BY customers.first_name
 ORDER BY repetir DESC
 
 
-
-
+6 - SELECT max (invoices.total) as maior from invoices
