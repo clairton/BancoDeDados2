@@ -16,3 +16,11 @@ invoices.total,
 customers.city
 order by customers.city asc
 
+
+5 - SELECT count(*) as Repetir, customers.first_name FROM customers
+GROUP BY customers.first_name 
+ORDER BY repetir DESC
+
+
+
+
