@@ -1,6 +1,6 @@
-1 - SELECT SUM (invoices.total) as total from invoices
+1 - SELECT SUM (invoices.total) as total from invoices // 2.00 pts
 
-2 - SELECT items.quantity, customers.street from items
+2 - SELECT items.quantity, customers.street from items // 1.50 pts, faltou o sum e group
 inner join invoices on invoices.id = items.invoice_id
 inner join customers on customers.id = invoices.customer_id
 order by items.quantity asc
@@ -14,12 +14,12 @@ group by
 products.name,
 invoices.total,
 customers.city
-order by customers.city asc
+order by customers.city asc //0.50 pts(apensa por tentar)
 
 
 5 - SELECT count(*) as Repetir, customers.first_name FROM customers
 GROUP BY customers.first_name 
-ORDER BY repetir DESC
+ORDER BY repetir DESC//0.50 pts(apensa por tentar)
 
 
-6 - SELECT max (invoices.total) as maior from invoices
+6 - SELECT max (invoices.total) as maior from invoices//2.00 pts
